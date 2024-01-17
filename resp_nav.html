@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="rep_nav.css">
+</head>
+<body>
+    <nav>
+    <div class="logo">Imax</div>
+    <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Service</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="">Login</a></li>
+    </ul>
+    <div class="menu">
+        
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+    </div>
+    </nav>    
+</body>
+<script>
+    const menu = document.querySelector('.menu')
+    const menuul = document.querySelector('nav ul')
+    menu.addEventListener('click',()=>{
+        menuul.classList.toggle('showmenu')
+    })
+    </script>
+</html>
